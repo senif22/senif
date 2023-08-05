@@ -1,0 +1,23 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <form action="myapp/updatedata/{{student.roll_no}}" method="POST">
+            {% csrf_token %}
+            g_no:<input type="text" name="g_no" value="{{data.g_no}}"/>
+            <br><br>
+            roll_no:<input type="text" name="roll_no" value="{{data.roll_no}}"/>
+            <br><br>
+            enr_no:<input type="text" name="enr_no" value="{{data.enr_no}}"/>
+            <br><br>
+            name:<input type="text" name="name" value="{{data.name}}"/>
+            <br><br>
+            div:<input type="text" name="div" value="{{data.div}}"/>
+            <br><br>
+            pro_det:<input type="text" name="pro_det" value="{{data.pro_det}}"/>
+            <br><br>
+            <input type="submit" value="update">
+        </form>
+    </body>
+</html>

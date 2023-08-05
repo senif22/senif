@@ -1,0 +1,35 @@
+<html> 
+    <table>
+        <tr>
+            <th>g_no</th>
+            <th>roll_no</th>
+            <th>enr_no</th>
+            <th>name</th>
+            <th>div</th>
+            <th>pro_det</th>
+        </tr>
+
+        {% for stu in student %}
+        <tr>
+            <td>{{ stu.g_no }}</td>
+            <td>{{ stu.roll_no }}</td>
+            <td>{{ stu.enr_no }}</td>
+            <td>{{ stu.name }}</td>
+            <td>{{ stu.div }}</td>
+            <td>{{ stu.pro_det }}</td>
+            <td>
+                <a href="/myapp/update/{{stu.roll_no}}">Edit</a>
+            </td>
+            <td>
+                <a href="/myapp/deletedata/{{stu.roll_no}}">Delete</a>
+            </td>
+        </tr>
+            {% endfor %}
+
+        
+    </table>
+</html>
+    
+
+        
+

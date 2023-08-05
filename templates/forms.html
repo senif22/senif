@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="{% url 'stordata' %}"  method="POST">
+    {% csrf_token %}
+    
+    <label>
+        g_no:
+    </label>&nbsp;
+    <input type="text" name="g_no"><br><br>
+
+    <label>
+        roll_no:
+    </label>&nbsp;
+    <input type="text" name="roll_no"><br><br>
+
+    <label>
+        enr_no:
+    </label>&nbsp;
+    <input type="text" name="enr_no"><br><br>
+
+    <label>
+        name:
+    </label>&nbsp;
+    <input type="text" name="name"><br><br>
+
+    <label>
+        div:
+    </label>&nbsp;
+    <input type="text" name="div"><br><br>
+
+    <label>
+        pro_det:
+    </label>&nbsp;
+    <input type="text" name="pro_det"><br><br>
+    
+    
+    <input type="submit" name="submit">
+</form>
+</body>
+</html>
